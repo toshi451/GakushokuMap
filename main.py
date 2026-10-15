@@ -2,7 +2,6 @@ from maps.GakushokuSample import GakushokuSample
 from maps.GakushokuWkatu import GakushokuWkatu
 # ↓のリストには、メンバーの各オススメ学食が格納されます。
 data = [
-    GakushokuWkatu(),
     GakushokuSample(), 
     ]
 
