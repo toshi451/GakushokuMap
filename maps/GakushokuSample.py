@@ -1,9 +1,8 @@
-from maps.GakushokuSample import GakushokuSample
-# ↓のリストには、メンバーの各オススメ学食が格納されます。
-data = [GakushokuSample(), ]
-for rank, d in enumerate(data, start=1):
-    print(f"{rank}位: {d.get_menu()}")
-    print("---------------------------------")
-    print(d.get_summary())
-    print(d.get_author())
-    print()
+from maps.AbstractGakushoku import AbstractGakushoku
+class GakushokuSample(AbstractGakushoku):
+    def get_menu(self):
+        return "オススメの学食メニューをここに書きます"
+    def get_summary(self):
+        return "オススメのポイントやなぜオススメできるかなど、簡単に書きます"
+    def get_author(self):
+        return "書いた人の名前を書きます"
